@@ -43,14 +43,6 @@ public class OrientationModule extends ReactContextBaseJavaModule {
     public void lockToLandscape() {
         final Activity currentActivity = getCurrentActivity();
         if (currentActivity != null) {
-            currentActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        }
-    }
-
-    @ReactMethod
-    public void lockToSensorLandscape() {
-        final Activity currentActivity = getCurrentActivity();
-        if (currentActivity != null) {
             currentActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
         }
     }
